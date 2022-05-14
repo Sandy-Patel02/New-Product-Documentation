@@ -2,7 +2,7 @@
 You can view and delete your scratch orgs and their associated requests from the Dev Hub.
 
 In Dev Hub, ActiveScratchOrgs represent the scratch orgs that are currently in use. ScratchOrgInfos represent the requests that were used to create scratch orgs and provide historical context.
-1.  Log in to Dev Hub org as the [https://help.salesforce.com/](System Administrator) or as a user with the Salesforce DX permissions.
+1.  Log in to Dev Hub org as the (System Administrator)(https://help.salesforce.com/) or as a user with the Salesforce DX permissions.
 1.  From the App Launcher, select **Active Scratch Org** to see a list of all active scratch orgs. 
     To view more details about a scratch org, click the link in the Number column.
 1.  To delete an active scratch org from the Active Scratch Org list view, choose Delete from the dropdown.
