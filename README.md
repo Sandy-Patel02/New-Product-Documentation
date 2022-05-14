@@ -1,4 +1,15 @@
 # New-Product-Documentation
+# Manage Scratch Orgs from Dev Hub
+You can view and delete your scratch orgs and their associated requests from the Dev Hub.
+
+In Dev Hub, ActiveScratchOrgs represent the scratch orgs that are currently in use. ScratchOrgInfos represent the requests that were used to create scratch orgs and provide historical context.
+1.  Log in to Dev Hub org as the System Administrator or as a user with the Salesforce DX permissions.
+1.  From the App Launcher, select Active Scratch Org to see a list of all active scratch orgs. 
+    To view more details about a scratch org, click the link in the Number column.
+3.  To delete an active scratch org from the Active Scratch Org list view, choose Delete from the dropdown.
+     Deleting an active scratch org does not delete the request (ScratchOrgInfo) that created it, but it does free up a scratch org so that it doesn’t count against   your allocations.
+
+
 # What is Lorem Ipsum?
 Lorem Ipsum is simply **dummy text** of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like _Aldus PageMaker_ including versions of Lorem Ipsum.
 ## Where does it come from?
