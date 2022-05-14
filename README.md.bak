@@ -1,5 +1,4 @@
 # Manage Scratch Orgs from Dev Hub
-
 You can view and delete your scratch orgs and their associated requests from the Dev Hub.
 
 In Dev Hub, ActiveScratchOrgs represent the scratch orgs that are currently in use. ScratchOrgInfos represent the requests that were used to create scratch orgs and provide historical context.
@@ -14,13 +13,8 @@ To view more details about a request, click the link in the Number column. The d
 Deleting the request (ScratchOrgInfo) also deletes the active scratch org.
 
 ##Enhance Salesforce with Code
-
 You can make your Salesforce org even more useful and responsive to your users by developing custom applications and integrating your external applications.
-
-It's best to do your development in a sandbox so you can test your code changes before you deploy them. 
-Sandboxes contain copies of your data, code, and configuration settings that are isolated from your production environment. 
-You can customize your organization and test applications in a sandbox, then deploy the changes to your production organization when ready. 
-In some cases, you might have several developers working in different sandboxes who then coordinate those changes for deployment.
+It's best to do your development in a sandbox so you can test your code changes before you deploy them. Sandboxes contain copies of your data, code, and configuration settings that are isolated from your production environment. You can customize your organization and test applications in a sandbox, then deploy the changes to your production organization when ready. In some cases, you might have several developers working in different sandboxes who then coordinate those changes for deployment.
 
 ## What is Lorem Ipsum?
 Lorem Ipsum is simply **dummy text** of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like _Aldus PageMaker_ including versions of Lorem Ipsum.
