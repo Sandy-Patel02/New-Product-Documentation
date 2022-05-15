@@ -1,7 +1,7 @@
 ---
-name:Sandip Patel
-password:It must be alphanumeric.
-BOD:02/01/1990
+name: Sandip Patel
+password: It must be alphanumeric.
+BOD: 02/01/1990
 ---
 
 # Choose an Authentication Protocol
