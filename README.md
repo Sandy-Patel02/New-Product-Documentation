@@ -1,4 +1,77 @@
-# Manage Scratch Orgs from Dev Hub
+# Choose an Authentication Protocol
+
+Your connections between Salesforce and external systems use an authentication protocol to confirm secure communication between the two systems.
+Choose the authentication protocol that matches the configuration of the external system that your org connects to. 
+When selecting which authentication protocol to use with your external system, keep the strengths and considerations of each protocol in mind.
+
+## Password
+
+A static username and password are used to directly authenticate into the external system.
+-  If you’re using the per-user identity type, each user accessing the external system manages their own username and password.
+
+## OAuth 2.0
+
+A user or the admin applies a credential for a specified **OAuth 2.0** system that authenticates into the external system.
+-  If you’re using the per-user identity type, each user accessing the external system manages their own credential.
+
+## JWT
+
+A JWT (rhymes with “hot”), or _JSON Web Token_ , manages your org’s authentication into the external system.
+-  Users do not need to manage their own credentials for the external system. When users view their authentication settings for external systems, 
+they can’t see options using this authentication protocol.
+-  The subject is a string when the identity type is named principal, and it’s a formula when the identity type is per user.
+-  Signing certificates aren’t included in packages. If you’re using JWT or JWT Token Exchange as the authentication protocol for 
+a packaged named credential, recreate the package’s referenced signing certificate in the subscriber org before installing the package.
+
+## JWT Token Exchange
+
+A JWT token is sent to an authorization provider, similar to _OAuth 2.0_, and receives a token in return that is used to authenticate into the external system.
+1.  Users do not need to manage their own credentials for the external system. When users view their authentication settings for external systems, 
+they can’t edit options using this authentication protocol. However, users can delete their JWT Token Exchange settings to use a different named credential.
+1.  The subject is a string when the identity type is named principal, and it’s a formula when the identity type is per user.
+1.  Signing certificates aren’t included in packages. If you’re using JWT or JWT Token Exchange as the authentication protocol for a packaged named 
+credential, recreate the package’s referenced signing certificate in the subscriber org before installing the package.
+
+## AWS Signature Version 4
+
+A protocol to authenticate callouts to resources in Amazon Web Services over HTTP.
+-  The identity type must be named principal.
+-  You can use it as an authentication protocol for Named Credentials
+-  You can’t use it as an authentication protocol for external data sources.
+
+>  If transmitting sensitive information such as healthcare data or credit card data, authenticated Named Credentials are required. 
+Salesforce recommends that Customers consider providing their own Certificates for extra security of sensitive data transmissions.
+
+See Also [Named Credentials](#names credentials)
+)
+
+# Named Credentials
+
+A named credential specifies the URL of a callout endpoint and its required authentication parameters in one definition. 
+To simplify the setup of authenticated callouts, specify a named credential as the callout endpoint. If you instead specify a URL as the callout 
+endpoint, you must register that URL in your org’s remote site settings and handle the authentication yourself. For example, for an Apex callout, 
+your code handles authentication, which can be less secure and especially complicated for OAuth implementations.
+
+Salesforce manages all authentication for callouts that specify a named credential as the callout endpoint so that you don’t have to. 
+You can also skip remote site settings, which are otherwise required for callouts to external sites, for the site defined in the named credential.
+
+>  All credentials stored within the NamedCredential, ExternalDataSource, and ExternalDataUserAuth entities are encrypted under a framework that is 
+consistent with other encryption frameworks on the platform. Salesforce encrypts your credentials by auto-creating org-specific keys. Credentials 
+encrypted using the previous encryption scheme were migrated to the new framework.
+
+Named credentials are supported in these types of callout definitions:
+-  Apex callouts
+-  External data sources of these types:
+   -  Salesforce Connect: OData 2.0
+   -  Salesforce Connect: OData 4.0
+   -  Salesforce Connect: Custom (developed with the Apex Connector Framework)
+-  External Services
+
+Named Credentials also include an OutboundNetworkConnection field that you can use to route callouts through a private connection. 
+By separating the endpoint URL and authentication from the callout definition, named credentials make callouts easier to maintain. For example, 
+if an endpoint URL changes, you update only the named credential. All callouts that reference the named credential simply continue to work.
+
+## Manage Scratch Orgs from Dev Hub
 
 You can view and delete your scratch orgs and their associated requests from the Dev Hub.
 
@@ -12,26 +85,3 @@ In Dev Hub, ActiveScratchOrgs represent the scratch orgs that are currently in u
 To view more details about a request, click the link in the Number column. The details of a scratch org request include whether it's active, expired, or deleted.
 1.  To delete the request that was used to create a scratch org, choose **Delete** from the dropdown.
 Deleting the request (ScratchOrgInfo) also deletes the active scratch org.
-
-## Enhance Salesforce with Code
-
-You can make your Salesforce org even more useful and responsive to your users by developing custom applications and integrating your external applications.
-
-It's best to do your development in a sandbox so you can test your code changes before you deploy them. 
-Sandboxes contain copies of your data, code, and configuration settings that are isolated from your production environment. 
-You can customize your organization and test applications in a sandbox, then deploy the changes to your production organization when ready. 
-In some cases, you might have several developers working in different sandboxes who then coordinate those changes for deployment.
-
-## What is Lorem Ipsum?
-
-Lorem Ipsum is simply **dummy text** of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like _Aldus PageMaker_ including versions of Lorem Ipsum.
-
-## Where does it come from?
-
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-
-## Why do we use it?
-
--  Test
--  Test1
--  Test2
