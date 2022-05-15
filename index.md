@@ -12,7 +12,7 @@ When selecting which authentication protocol to use with your external system, k
 
 For more information: contact {{page.fname}} or {{site.author}}
 
-{% for itme in site.data.data_file %}
+{% for item in site.data.data_file %}
 - {{item.Release }}, {{ item.Description }}, {{ item.Date}}
 {% endfor %}
 
