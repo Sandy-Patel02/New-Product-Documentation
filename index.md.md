@@ -1,7 +1,6 @@
 ---
 name: Sandip Patel
 password: It must be alphanumeric.
-BOD: 02/01/1990
 ---
 
 # Choose an Authentication Protocol
@@ -15,7 +14,7 @@ For more information, connect {{page.name}}
 
 A static username and password are used to directly authenticate into the external system.
 -  If you’re using the per-user identity type, each user accessing the external system manages their own username and password.
-For Example: {{page.password)
+For Example: {{page.password}}
 
 ## OAuth 2.0
 
