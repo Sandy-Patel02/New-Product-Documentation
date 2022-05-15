@@ -1,7 +1,6 @@
 ---
 fname: Sandip
 password: It must be alphanumeric..
-layout: demo_template.html
 ---
 
 # Choose an Authentication Protocol
