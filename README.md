@@ -39,10 +39,11 @@ A protocol to authenticate callouts to resources in Amazon Web Services over HTT
 -  You can use it as an authentication protocol for Named Credentials
 -  You can’t use it as an authentication protocol for external data sources.
 
+>  ###Note
 >  If transmitting sensitive information such as healthcare data or credit card data, authenticated Named Credentials are required. 
 Salesforce recommends that Customers consider providing their own Certificates for extra security of sensitive data transmissions.
 
-See Also [Named Credentials](README.md#named credentials)
+See Also [Named Credentials](#named credentials)
 
 # Named Credentials
 
@@ -54,9 +55,10 @@ your code handles authentication, which can be less secure and especially compli
 Salesforce manages all authentication for callouts that specify a named credential as the callout endpoint so that you don’t have to. 
 You can also skip remote site settings, which are otherwise required for callouts to external sites, for the site defined in the named credential.
 
+>  ###Important
 >  All credentials stored within the NamedCredential, ExternalDataSource, and ExternalDataUserAuth entities are encrypted under a framework that is 
-consistent with other encryption frameworks on the platform. Salesforce encrypts your credentials by auto-creating org-specific keys. Credentials 
-encrypted using the previous encryption scheme were migrated to the new framework.
+consistent with other encryption frameworks on the platform. 
+>  Salesforce encrypts your credentials by auto-creating org-specific keys. Credentials encrypted using the previous encryption scheme were migrated to the new framework.
 
 Named credentials are supported in these types of callout definitions:
 -  Apex callouts
