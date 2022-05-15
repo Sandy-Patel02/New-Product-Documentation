@@ -1,14 +1,13 @@
 ---
 name: Sandip Patel
-password: It must be alphanumeric.
----
+password: It must be alphanumeric
 
 # Choose an Authentication Protocol
 
 Your connections between Salesforce and external systems use an authentication protocol to confirm secure communication between the two systems.
 Choose the authentication protocol that matches the configuration of the external system that your org connects to. 
 When selecting which authentication protocol to use with your external system, keep the strengths and considerations of each protocol in mind.
-For more information, connect {{page.name}}
+For more information: connect {{page.name}}
 
 ## Password
 
