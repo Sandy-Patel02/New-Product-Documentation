@@ -10,7 +10,7 @@ Your connections between Salesforce and external systems use an authentication p
 Choose the authentication protocol that matches the configuration of the external system that your org connects to. 
 When selecting which authentication protocol to use with your external system, keep the strengths and considerations of each protocol in mind.
 
-For more information: contact {{page.fname}}
+For more information: contact {{page.fname}} or {{site.author}}
 
 ## Password
 
