@@ -43,7 +43,7 @@ A protocol to authenticate callouts to resources in Amazon Web Services over HTT
 >  If transmitting sensitive information such as healthcare data or credit card data, authenticated Named Credentials are required. 
 Salesforce recommends that Customers consider providing their own Certificates for extra security of sensitive data transmissions.
 
-See Also [Named Credentials](#named-credentials)
+See Also [Manage Scratch Orgs from Dev Hub](#manage-scratch-orgs-from-dev-hub)
 
 # Named Credentials
 
