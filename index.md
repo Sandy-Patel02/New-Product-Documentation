@@ -1,6 +1,7 @@
 ---
 fname: Sandip Patel
 password: It must be alphanumeric..
+layout: none
 theme: jekyll-theme-cayman
 ---
 
