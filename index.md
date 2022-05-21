@@ -1,6 +1,7 @@
 ---
 fname: Sandip
 password: It must be alphanumeric..
+layout: demo_template
 theme: jekyll-theme-cayman
 ---
 ![Company Logo](images/Conga.png)
