@@ -3,7 +3,7 @@ fname: Sandip
 password: It must be alphanumeric..
 theme: jekyll-theme-cayman
 ---
-![Company Logo](images/Conga.png "Conga Logo" style="height": 80px; "width": 80px;)
+![Company Logo](images/Conga.png "Conga Logo" style="height": 80px; width: 80px";)
 
 # Choose an Authentication Protocol
 
@@ -16,6 +16,11 @@ For more information: contact {{page.fname}} or {{site.author}}
 {% for item in site.data.data_file %}
 - **{{item.Release}}, {{ item.Description }}, {{ item.Date}}**
 {% endfor %}
+
+|  Release  | Description   |
+| --------- | -----------   |
+| May '22   | New Topic     |
+| April '22 | Modified Topic|
 
 ## Password
 
