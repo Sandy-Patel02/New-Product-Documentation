@@ -18,6 +18,11 @@ For more information: contact {{page.fname}} or {{site.author}}
 - **{{item.Release}}, {{ item.Description }}, {{ item.Date}}**
 {% endfor %}
 
+|  Release   |  Description  |
+|------------|---------------|
+| Winter '22 | New topic     |
+| Summer '22 | Updated topic |
+
 |  Release  | Description   |
 | --------- | -----------   |
 | May '22   | New Topic     |
