@@ -3,11 +3,11 @@
 <head></head>
   <body>  
     <main>
-	<header> @copy; {{page.fname}}</header>
+	<header>{{page.fname}}</header>
       <div>
         {{ content }}
       </div>
-	  <footer>{% include footer.txt %}</footer>
+	  <footer>{{site.author}}</footer>
     </main>   
   </body>
 </html>
