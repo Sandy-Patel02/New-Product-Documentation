@@ -18,11 +18,6 @@ For more information: contact {{page.fname}} or {{site.author}}
 - **{{item.Release}}, {{ item.Description }}, {{ item.Date}}**
 {% endfor %}
 
-|  Release   |  Description  |
-|------------|---------------|
-| Winter '22 | New topic     |
-| Summer '22 | Updated topic |
-
 |  Release  | Description   |
 | --------- | -----------   |
 | May '22   | New Topic     |
@@ -33,7 +28,7 @@ For more information: contact {{page.fname}} or {{site.author}}
 A static username and password are used to directly authenticate into the external system.
 -  If you’re using the per-user identity type, each user accessing the external system manages their own username and password.
 
-'For Example: {{page.password}}'
+`For Example: {{page.password}}`
 
 ## OAuth 2.0
 
