@@ -4,6 +4,11 @@ Your connections between Salesforce and external systems use an authentication p
 Choose the authentication protocol that matches the configuration of the external system that your org connects to. 
 When selecting which authentication protocol to use with your external system, keep the strengths and considerations of each protocol in mind.
 
+| Release | Description|
+|------- | ------- |
+|Winter 22 | New |
+|Summer 22 | Updated |
+
 ## Password
 
 A static username and password are used to directly authenticate into the external system.
@@ -63,9 +68,9 @@ consistent with other encryption frameworks on the platform.
 Named credentials are supported in these types of callout definitions:
 -  Apex callouts
 -  External data sources of these types:
-   -  Salesforce Connect: OData 2.0
-   -  Salesforce Connect: OData 4.0
-   -  Salesforce Connect: Custom (developed with the Apex Connector Framework)
+   -  Salesforce Connect: **OData 2.0**
+   -  Salesforce Connect: **OData 4.0**
+   -  Salesforce Connect: **Custom (developed with the Apex Connector Framework)**
 -  External Services
 
 Named Credentials also include an OutboundNetworkConnection field that you can use to route callouts through a private connection. 
