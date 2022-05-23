@@ -1,5 +1,6 @@
 ---
 fname: Sandip Patel
+latout: exam_template
 ---
 
 # Step 5: Set preferences for receiving notifications
