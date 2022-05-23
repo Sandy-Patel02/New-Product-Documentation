@@ -27,6 +27,13 @@ Complete the following steps to set your preferences for receiving various types
 IAM access groups provide a way for you to quickly and easily assign access to multiple resources in your account at one time.
 
 1. Create an access group.
+
+     a. Go to **Manage > Access (IAM) > Access Groups** in the IBM Cloud console.
+     
+     b. Click **Create**.
+	 
+	 c. Enter a name for your group, and click **Create**. For example, if you know multiple users in your account need to be able to apply subscription 
+        codes, track usage, or perform other billed-related tasks, you might name your group ```Billing-Editor-Access```.
   
 	<ol type="a">
       <li> Go to <b>Manage > Access (IAM) > Access Groups</b> in the IBM Cloud console.</b></li>
