@@ -1,10 +1,8 @@
 ---
 fname: Sandip Patel
-password: It must be alphanumeric..
 layout: demo_template
 theme: jekyll-theme-cayman
 ---
-![Company Logo](images/Markdown logo.png)
 
 # Choose an Authentication Protocol
 
@@ -12,59 +10,11 @@ Your connections between Salesforce and external systems use an authentication p
 Choose the authentication protocol that matches the configuration of the external system that your org connects to. 
 When selecting which authentication protocol to use with your external system, keep the strengths and considerations of each protocol in mind.
 
-For more information: contact {{page.fname}} or {{site.author}}
-
-{% for item in site.data.data_file %}
-- **{{item.Release}}, {{ item.Description }}, {{ item.Date}}**
-{% endfor %}
-
 |  Release  | Description   |
 | --------- | -----------   |
 | May '22   | New Topic     |
 | April '22 | Modified Topic|
 
-## Password
-
-A static username and password are used to directly authenticate into the external system.
--  If you’re using the per-user identity type, each user accessing the external system manages their own username and password.
-
-`For Example: {{page.password}}`
-
-## OAuth 2.0
-
-A user or the admin applies a credential for a specified **OAuth 2.0** system that authenticates into the external system.
--  If you’re using the per-user identity type, each user accessing the external system manages their own credential.
-
-## JWT
-
-A JWT (rhymes with “hot”), or _JSON Web Token_ , manages your org’s authentication into the external system.
--  Users do not need to manage their own credentials for the external system. When users view their authentication settings for external systems, 
-they can’t see options using this authentication protocol.
--  The subject is a string when the identity type is named principal, and it’s a formula when the identity type is per user.
--  Signing certificates aren’t included in packages. If you’re using JWT or JWT Token Exchange as the authentication protocol for 
-a packaged named credential, recreate the package’s referenced signing certificate in the subscriber org before installing the package.
-
-## JWT Token Exchange
-
-A JWT token is sent to an authorization provider, similar to _OAuth 2.0_, and receives a token in return that is used to authenticate into the external system.
-1.  Users do not need to manage their own credentials for the external system. When users view their authentication settings for external systems, 
-they can’t edit options using this authentication protocol. However, users can delete their JWT Token Exchange settings to use a different named credential.
-1.  The subject is a string when the identity type is named principal, and it’s a formula when the identity type is per user.
-1.  Signing certificates aren’t included in packages. If you’re using JWT or JWT Token Exchange as the authentication protocol for a packaged named 
-credential, recreate the package’s referenced signing certificate in the subscriber org before installing the package.
-
-## AWS Signature Version 4
-
-A protocol to authenticate callouts to resources in Amazon Web Services over HTTP.
--  The identity type must be named principal.
--  You can use it as an authentication protocol for Named Credentials
--  You can’t use it as an authentication protocol for external data sources.
-
->  ### Note
->  If transmitting sensitive information such as healthcare data or credit card data, authenticated Named Credentials are required. 
-Salesforce recommends that Customers consider providing their own Certificates for extra security of sensitive data transmissions.
-
-See Also [Manage Scratch Orgs from Dev Hub](#manage-scratch-orgs-from-dev-hub)
 
 # Named Credentials
 
