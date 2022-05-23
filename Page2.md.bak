@@ -10,5 +10,7 @@ The Demo User Guide provides documentation for users of TWT Certification topics
 to a page listed below, or use the next and previous buttons in the navigation bar at the top of the page to move through the documentation in order.
 
 | Name of the Passengers | Age |
-|-------------|--------------|{% for item in site.data.titanic %}
-|{{item.Name}}|{{ item.Age }}|{% endfor %}
+|-------------|--------------|
+{% for item in site.data.titanic %}
+|{{item.Name}}|{{ item.Age }}|
+{% endfor %}
