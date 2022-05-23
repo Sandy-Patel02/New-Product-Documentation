@@ -5,7 +5,7 @@
 </head>
   <body>  
     <main>
-	<header> {{page.image}}</header>
+	<header> {{page.fname}}</header>
       <div>
         {{ content }}
       </div>
