@@ -29,6 +29,7 @@ IAM access groups provide a way for you to quickly and easily assign access to m
 1. Create an access group.
 
    a. Go to **Manage > Access (IAM) > Access Groups** in the IBM Cloud console.
+   
    b. Click Create.
    
    c. Enter a name for your group, and click **Create**. For example, if you know multiple users in your account need to be able to apply subscription 
