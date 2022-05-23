@@ -7,10 +7,14 @@
          color: green;
          }
        h1 { 
-	       color: Blue;
+	       color: #000080;
 		   }
 		h2 {
-            color: Blue;		
+            color: #000080;
+            }
+        a {
+           color: blue:
+           }		   
 </style>
 </head>
   <body>  
