@@ -6,6 +6,9 @@
     body {
          color: green;
          }
+       h1 { 
+	       color: Red;
+		   }
 </style>
 </head>
   <body>  
