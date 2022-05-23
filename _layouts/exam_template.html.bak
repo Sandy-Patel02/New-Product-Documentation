@@ -2,23 +2,6 @@
 <html lang="en">
 <head>
 <link rel="stylesheet" type="text/css" href="./assets/css/style1.css"/>
-<style>
-    body {
-         color: green;
-         }
-       h1 { 
-	       color: black;
-		   }
-		h2 {
-            color: black;
-            }
-        a:link {
-           color: blue;
-           }
-        a:visited {
-           color: blue;
-           }		   
-</style>
 </head>
   <body>  
     <main>
