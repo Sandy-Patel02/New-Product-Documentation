@@ -1,6 +1,7 @@
 ---
 fname: Sandip Patel
-latout: exam_template
+layout: demo_template
+theme: jekyll-theme-cayman
 ---
 
 # Step 5: Set preferences for receiving notifications
