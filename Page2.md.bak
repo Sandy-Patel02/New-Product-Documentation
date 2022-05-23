@@ -11,4 +11,5 @@ to a page listed below, or use the next and previous buttons in the navigation b
 
 |No. |Name of the passengers|Age |
 |----|----------------------|----| {% for item in site.data.titanic %}
+|1.|{{item.Name}}|{{ item.Age }}|
 |1.|{{item.Name}}|{{ item.Age }}| {% endfor %}
