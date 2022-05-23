@@ -2,11 +2,6 @@
 <html lang="en">
 <head>
 <link rel="stylesheet" type="text/css" href="./assets/css/style.css"/>
-<style>
-    body {
-         color: green;
-         }
-</style>
 </head>
   <body>  
     <main>
