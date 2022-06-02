@@ -2,7 +2,7 @@
 fname: Sandip Patel
 image: Markdown Image for Certification Exam
 password: It must be alphanumeric..
-theme: jekyll-theme-cayman
+layout: demo_template
 ---
 ![Company Logo](images/Markdown logo.png)
 
