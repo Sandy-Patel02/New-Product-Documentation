@@ -1,3 +1,7 @@
+---
+theme: jekyll-theme-cayman
+---
+
 # Choose an Authentication Protocol
 
 Your connections between Salesforce and external systems use an authentication protocol to confirm secure communication between the two systems.
