@@ -4,7 +4,7 @@ image: Markdown Image for Certification Exam
 password: It must be alphanumeric..
 layout: demo_template
 ---
-![Company Logo](images/Markdown logo.png)
+![Company Logo](images/Conga.png)
 
 # Choose an Authentication Protocol
 
