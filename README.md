@@ -1,5 +1,5 @@
 ---
-theme: jekyll-theme-cayman
+layout: exam_template
 ---
 
 # Choose an Authentication Protocol
