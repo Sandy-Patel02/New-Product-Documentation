@@ -2,7 +2,7 @@
 fname: Sandip Patel
 layout: exam_template
 ---
-# Setting up your IBM Cloud Account
+# Setting up your IBM Cloud Accounts
 
 ## Step 5: Set preferences for receiving notifications
 
