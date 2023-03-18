@@ -16,7 +16,7 @@ When selecting which authentication protocol to use with your external system, k
 ## Password
 
 A static username and password are used to directly authenticate into the external system.
--  If you’re using the per-user identity type, each user accessing the external system manages their own username and password.
+-  If you’re using the per-user identity type, each user accessing the external system manages their own username and password..
 
 ## OAuth 2.0
 
